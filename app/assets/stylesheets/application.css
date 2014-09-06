@@ -11,3 +11,39 @@
  *= require_self
  *= require_tree .
  */
+
+.mntc-logo{
+	width: 150px;
+   height: 30px;
+   margin: 0 0 0 80%;
+}
+
+.event_below{
+	font-size: 1.3em;
+}
+
+.heading_top{
+	margin: 60px 0px 0px 0px;
+}
+
+.event_line{
+	margin-top: -33px;
+}
+
+.event_head{
+	margin: 4% 0px 0px 38%;
+}
+.event_cont{
+	margin: 1% 1% 0px 38%;
+   font-size: 1.3em;
+   text-align: left;
+
+}
+
+.bottom{
+	margin-bottom: 110px;
+}
+
+.h_sponser{
+	color: white;
+}
