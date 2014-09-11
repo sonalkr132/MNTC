@@ -1,23 +1,133 @@
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#"><%= image_tag("mntc.jpg", class: "mntc-logo") %></a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "About Us" %></li>
+            <li><%= link_to "Events" %></li>
+            <li><%= link_to "Sponser Us" %></li>
+            <li><%= link_to "Contact Us" %></li>
+            <li><button type="button" class="btn btn-lg btn-danger">REGISTER HERE</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
+<!--------------------------------- carousel --------------------------------------> 
 
-<h1>Listing indices</h1>
+  <div id="myCarousel" class="carousel slide">
+  
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><%= image_tag("m22.jpg") %></div>
+    <div class="item"><%= image_tag("m3.jpg") %></div>
+    <div class="item"><%= image_tag("m7.jpg") %></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left hidden-xs" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right hidden-xs" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<section class="events-wrapper">
+  <div class="container">
+    
+       
+    <div class="pagination-centered">
+     <h1 class="heading_top">EVENTS</h1>
+     <p class="text-muted event_below"> Check out our events! You are going to love them..</p>
+     <h1 class="event_line"> _ </h1>
+    </div>
 
-<% @indices.each do |index| %>
-  <tr>
-    <td><%= link_to 'Show', index %></td>
-    <td><%= link_to 'Edit', edit_index_path(index) %></td>
-    <td><%= link_to 'Destroy', index, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+  <div class="container box">
 
-<br />
+    <div class="col-md-4 event_img"><%= image_tag("hour.jpg") %></div>
+    <div class="col-md-1 small_box">1</div>
+    <h3 class="event_head">Hour Glass</h3>
+    <p class="event_cont">
+      Do you think you can beat time? Do you have what it takes? Come and prove it to yourself!
+      60 minutes and 60 questions. It doesn't get anymore exciting than this. 60 minutes and 60 questions. It doesn't get anymore exciting than this.
+    </p>
 
-<%= link_to 'New Index', new_index_path %>
+  </div>
+
+   <div class="container box">
+
+    <div class="col-md-4 event_img altr"><%= image_tag("simplex.jpg") %></div>
+    <div class="col-md-1 small_box b_altr">2</div>
+    <h3 class="event_head h_altr">Simplex</h3>
+    <p class="event_cont c_altr">
+     Alogrithm and coding: Use your mathematical skills and computational skills together and make the solving of the questions simplex. Simplex is an onsite programming event which is not mere mathematics or programming, both have to be used together, adding your mathematical approach makes the solving quicker and easier
+    </p>
+
+  </div>
+
+   <div class="container box">
+
+    <div class="col-md-4 event_img"><%= image_tag("kr.jpg") %></div>
+    <div class="col-md-1 small_box">3</div>
+    <h3 class="event_head">Kriptic</h3>
+    <p class="event_cont">
+     Cryptology - Ujit fwfou jt hpjoh up cf bxftpnf !!!<br>
+     Does this leave you flummoxed? This is not a typo designed to fool you but it is an event created to test your code cracking abilities. An event which requires no previous knowledge other than your presence of mind and quick wits.
+    </p>
+
+  </div>
+
+   <div class="container box bottom">
+
+    <div class="col-md-4 event_img altr"><%= image_tag("constructo.jpg") %></div>
+    <div class="col-md-1 small_box b_altr">4</div>
+    <h3 class="event_head h_altr">Constructo</h3>
+    <p class="event_cont c_altr">
+     Do you have love for creating brand new stuff? DO you find the satisfaction in watching any self-made thing working? Then this is your arena. Regain your can-do attitude now as we bring to you an oppurtunity to unleash the creative skills in you, to make something out of nothing!! Grab it all as you are provided with virtual money to shop the raw materials for your model.
+    </p>
+
+  </div>
+
+     <div class="span3">
+        
+      </div> 
+  </div>
+</section> <!-- events-wrapper -->
+
+<section class="sponsers-wrapper">
+  <div class="container">
+    <div class="pagination-centered">
+     <h1 class="heading_top h_sponser">SPONSERS</h1>
+     <p class="event_below h_sponser"> Why do you want to give us your money</p>
+     <h1 class="event_line h_sponser"> _ </h1>
+      <div class="col-md-12 event_img">&nbsp;</div>
+       <div class="col-md-12 event_img">&nbsp;</div>
+     <p class="previous_spon"> our previous sponsers</p>
+     <div class = "row">
+     <div class="col-md-3 event_img"><%= image_tag("flo.png") %></div>
+      <div class="col-md-3 event_img"><%= image_tag("lee.png") %></div>
+       <div class="col-md-3 event_img"><%= image_tag("test.png") %></div>
+       
+        <div class="col-md-3 event_img"><%= image_tag("lol.png") %></div>
+       </div>
+       <div class = "row">
+         <div class="col-md-3 col-md-offset-1"><%= image_tag("teach.png") %></div>
+        
+          <div class="col-md-3 "><%= image_tag("sav.png") %></div>
+          <div class="col-md-3 "><%= image_tag("tvs.png") %></div>
+       </div>
+    </div>
+  </div>
+</section> <!-- sponsers-wrapper -->
+
+<section class="register-wrapper">
+  <div class="contianer">
+   <div class="pagination-centered">
+     <h1 class="heading_top">Register</h1>
+      <%= yield %>
+    </div>
+  </div>
+</section> <!-- register-wrapper -->
