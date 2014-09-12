@@ -6,14 +6,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#"><%= image_tag("mntc.jpg", class: "mntc-logo") %></a>
+        <a class="brand" href="#"><%= image_tag("ank_logo.png", class: "mntc-logo") %></a>
         <div class="nav-collapse">
           <ul class="nav">
             <li><%= link_to "About Us" %></li>
             <li><%= link_to "Events" %></li>
             <li><%= link_to "Sponser Us" %></li>
             <li><%= link_to "Contact Us" %></li>
-            <li><button type="button" class="btn btn-lg btn-danger">REGISTER HERE</button></li>
+            <li><button type="button" class="btn foo-support">REGISTER</button></li>
           </ul>
         </div>
       </div>
@@ -26,7 +26,11 @@
   
   <!-- Carousel items -->
   <div class="carousel-inner">
-    <div class="active item"><%= image_tag("m22.jpg") %></div>
+    <div class="active item"><%= image_tag("m22.jpg") %>
+      <div class="carousel-caption">
+          <p >Sed erat sapien, varius vitae porttitor sed, aliquet non turpis. In nibh purus, lacinia eget aliquet non, placerat ultricies lectus. Cras a mi ornare, gravida neque eget, maximus urna. Donec pulvinar lorem vel placerat condimentum.</p>
+      </div>
+    </div>
     <div class="item"><%= image_tag("m3.jpg") %></div>
     <div class="item"><%= image_tag("m7.jpg") %></div>
   </div>
@@ -267,7 +271,15 @@
 
 <section class="footer-wrapper">
  <div class="pagination-centered">
-     <h2 class="heading_register">CONTACT US</h2>
+     <h2 class="heading_register contact">CONTACT US</h2>
+      
+     
+        <%= image_tag("Facebook_icon.png", :class=>"img-rounded") %>
+        <%= image_tag("google-plus-icon-square.jpg", :class=>"img-rounded") %>
+        <%= image_tag("email-blue-icon.png", :class=>"img-rounded") %>
+        <p class=" h_sponser"> Show us your love! Follow us on facebbok and google plus. </p>
+    <div class="footer"> Designed and developed by MATHS AND TECH CLUB - NIT DURGAPUR</div>
+     
  </div>
 
 </section> <!-- footer-wrapper -->
