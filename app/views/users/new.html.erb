@@ -1,4 +1,149 @@
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#"><%= image_tag("mntc.jpg", class: "mntc-logo") %></a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "About Us" %></li>
+            <li><%= link_to "Events" %></li>
+            <li><%= link_to "Sponser Us" %></li>
+            <li><%= link_to "Contact Us" %></li>
+            <li><button type="button" class="btn btn-lg btn-danger">REGISTER HERE</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
+<!--------------------------------- carousel --------------------------------------> 
+
+  <div id="myCarousel" class="carousel slide">
+  
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><%= image_tag("m22.jpg") %></div>
+    <div class="item"><%= image_tag("m3.jpg") %></div>
+    <div class="item"><%= image_tag("m7.jpg") %></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left upp hidden-xs" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right upp hidden-xs" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<section class="events-wrapper">
+  <div class="container">
+    
+       
+    <div class="pagination-centered">
+     <h1 class="heading_top">EVENTS</h1>
+     <p class="text-muted event_below"> Check out our events! You are going to love them..</p>
+     <h1 class="event_line"> _ </h1>
+    </div>
+
+  <div class="container box">
+
+    <div class="col-md-4 event_img"><%= image_tag("hour.jpg") %></div>
+    <div class="col-md-1 small_box">1</div>
+    <h3 class="event_head">Hour Glass</h3>
+    <p class="event_cont">
+      Do you think you can beat time? Do you have what it takes? Come and prove it to yourself!
+      60 minutes and 60 questions. It doesn't get anymore exciting than this. 60 minutes and 60 questions. It doesn't get anymore exciting than this.
+    </p>
+
+  </div>
+
+   <div class="container box">
+
+    <div class="col-md-4 event_img altr"><%= image_tag("simplex.jpg") %></div>
+    <div class="col-md-1 small_box b_altr">2</div>
+    <h3 class="event_head h_altr">Simplex</h3>
+    <p class="event_cont c_altr">
+     Alogrithm and coding: Use your mathematical skills and computational skills together and make the solving of the questions simplex. Simplex is an onsite programming event which is not mere mathematics or programming, both have to be used together, adding your mathematical approach makes the solving quicker and easier
+    </p>
+
+  </div>
+
+   <div class="container box">
+
+    <div class="col-md-4 event_img"><%= image_tag("kr.jpg") %></div>
+    <div class="col-md-1 small_box">3</div>
+    <h3 class="event_head">Kriptic</h3>
+    <p class="event_cont">
+     Cryptology - Ujit fwfou jt hpjoh up cf bxftpnf !!!<br>
+     Does this leave you flummoxed? This is not a typo designed to fool you but it is an event created to test your code cracking abilities. An event which requires no previous knowledge other than your presence of mind and quick wits.
+    </p>
+
+  </div>
+
+   <div class="container box bottom">
+
+    <div class="col-md-4 event_img altr"><%= image_tag("constructo.jpg") %></div>
+    <div class="col-md-1 small_box b_altr">4</div>
+    <h3 class="event_head h_altr">Constructo</h3>
+    <p class="event_cont c_altr">
+     Do you have love for creating brand new stuff? DO you find the satisfaction in watching any self-made thing working? Then this is your arena. Regain your can-do attitude now as we bring to you an oppurtunity to unleash the creative skills in you, to make something out of nothing!! Grab it all as you are provided with virtual money to shop the raw materials for your model.
+    </p>
+
+  </div>
+
+     <div class="span3">
+        
+      </div> 
+  </div>
+</section> <!-- events-wrapper -->
+
+<section class="sponsers-wrapper">
+  <div class="container">
+    <div class="pagination-centered">
+     <h1 class="heading_top h_sponser">SPONSERS</h1>
+     <p class="event_below h_sponser"> Why do you want to give us your money</p>
+     <h1 class="event_line h_sponser"> _ </h1>
+      <div class="col-md-12 event_img">&nbsp;</div>
+       <div class="col-md-12 event_img">&nbsp;</div>
+     <p class="previous_spon"> our previous sponsers</p>
+     <div class = "row">
+     <div class="col-md-3 event_img"><%= image_tag("flo.png") %></div>
+      <div class="col-md-3 event_img"><%= image_tag("lee.png") %></div>
+       <div class="col-md-3 event_img"><%= image_tag("test.png") %></div>
+       
+        <div class="col-md-3 event_img"><%= image_tag("lol.png") %></div>
+       </div>
+       <div class = "row">
+         <div class="col-md-3 col-md-offset-1"><%= image_tag("teach.png") %></div>
+        
+          <div class="col-md-3 "><%= image_tag("sav.png") %></div>
+          <div class="col-md-3 "><%= image_tag("tvs.png") %></div>
+       </div>
+    </div>
+  </div>
+  <br>
+<br>
+</section> <!-- sponsers-wrapper -->
+
+<section class="register-wrapper">
+  <div class="contianer">
+   <div class="pagination-centered">
+     <h1 class="heading_register">Register</h1>
+     <p class="event_below h_sponser"> Enter your details here </p>
+     <h1 class="event_line h_sponser"> _ </h1>
+   
+<svg height="70" width="70" class="glif">
+  <circle cx="30" cy="30" r="25" stroke="white" stroke-width="3" fill="#348DD3" text="V"/>
+  <path d="M17,26 L30,38 L43,26" style="stroke: #ffffff; fill:white; stroke-width: 3px"/> 
+  Sorry, your browser does not support inline SVG.  
+</svg> 
+<br>
+ <svg height="25" width="100" class="glif-down">
+  <path d="M50,0 L0,50 L100,50" style="stroke: #ffffff; fill:white; stroke-width: 3px"/> 
+  Sorry, your browser does not support inline SVG.  
+</svg>
+
+<div class="reg_form">
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -13,31 +158,116 @@
   <% end %> 
 
   <div class="n-thread">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name , placeholder: "Name", class: "tex" %>
   </div>
   <div class="n-thread">
-    <%= f.label :college %>
-    <%= f.text_field :college%>
+    <%= f.text_field :college, placeholder: "College", class: "tex"%>
   </div>
    <div class="n-thread">
-    <%= f.label :year %>
-    <%= f.text_field :year %>
+    <%= f.text_field :year, placeholder: "Year", class: "tex" %>
   </div>
   <div class="n-thread">
-    <%= f.label :department %>
-    <%= f.text_field :department%>
+    <%= f.text_field :department, placeholder: "Department", class: "tex"%>
   </div>
    <div class="n-thread">
-    <%= f.label :mobile %>
-    <%= f.text_field :mobile %>
+    <%= f.text_field :mobile, placeholder: "Mobile", class: "tex" %>
   </div>
   <div class="n-thread">
-    <%= f.label :email %>
-    <%= f.text_field :email%>
+    <%= f.text_field :email, placeholder: "Email", class: "tex"%>
   </div>
 
   <div class="actions">
-    <%= f.submit 'Post' %>
+    <%= f.submit 'REGISTER', :class=>"foo" %>
   </div>
 <% end %>
+</div>
+<br>
+<br>
+<br>
+<br>
+ </div>
+  </div>
+</section> <!-- register-wrapper -->
+
+<section class="about-wrapper">
+<div class="pagination-centered">
+     <h2 class="heading_about">ABOUT US</h2>
+     <p class="event_below"> This Club Was Possible Because Of These Awesome People</p>
+      <h1 class="event_line"> _ </h1>
+</div>
+  <div id="myCarousel2" class="carousel slide bottom_car" style="width: 70%"  data-interval="false">
+  
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <%= image_tag("aj.jpg", :class=>"img-circle") %>
+      <div class="carousel-caption">
+          <p class = "car_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum facilisis dui in pellentesque. Integer venenatis dignissim felis, ut dignissim erat aliquet vitae. Cras tincidunt imperdiet iaculis. </p>
+          <h3 class="name_head"> Apurva Jha</h3>
+          <p>Treasurer</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("ak.jpg", :class=>"img-circle") %>
+      <div class="carousel-caption">
+          <p class = "car_text">Sed erat sapien, varius vitae porttitor sed, aliquet non turpis. In nibh purus, lacinia eget aliquet non, placerat ultricies lectus. Cras a mi ornare, gravida neque eget, maximus urna. Donec pulvinar lorem vel placerat condimentum.</p>
+          <h3 class="name_head"> Atreyee Kundu</h3>
+          <p>Co convenor</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("dm.jpg", :class=>"img-circle") %>
+      <div class="carousel-caption">
+          <p class = "car_text">Integer imperdiet urna nisl. Etiam condimentum tellus quis turpis feugiat molestie. Curabitur feugiat in dolor sed finibus. Morbi pulvinar maximus lacus at faucibus. Pellentesque eros lectus, condimentum at libero tristique, convallis accumsan magna. Vestibulum blandit risus in lorem fringilla</p>
+          <h3 class="name_head"> Debjit Mondal</h3>
+          <p>General Secretary</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("gt.jpg", :class=>"img-circle") %>
+     <div class="carousel-caption">
+          <p class = "car_text">eu molestie tortor elementum. Sed at enim lobortis, auctor sem id, mollis mauris. Sed accumsan venenatis maximus. Vivamus in hendrerit augue.Suspendisse eget nulla facilisis dolor aliquam rhoncus id at leo. Curabitur ut tempor tellus. Cras maximus, odio sit</p>
+          <h3 class="name_head"> Gopesh Tulsyan</h3>
+          <p>Tech Head</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("mj.jpg", :class=>"img-circle") %>
+       <div class="carousel-caption">
+          <p class = "car_text">in hendrerit enim magna non justo. Nam eget ullamcorper metus. Vestibulum interdum quis dui feugiat sagittis. Aliquam euismod vulputate risus, vitae blandit ligula fermentum egestas. Proin a elit ac nulla facilisis accumsan. Pellentesque molestie tincidunt dui eget porta</p>
+          <h3 class="name_head"> Mayank Jha</h3>
+          <p>Convenor</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("ss.jpg", :class=>"img-circle") %>
+       <div class="carousel-caption">
+          <p class = "car_text">Etiam ullamcorper arcu in ante viverra aliquam ut eu lectus. Nullam non massa eros. Suspendisse sollicitudin ut diam suscipit sagittis. Fusce ut quam vitae justo mattis placerat ut porttitor neque. Ut sed ligula venenatis feugiat ex id, rhoncus sapien. Proin laoreet nunc eget magna dignissim rutrum. Pellentesque habitant morbi tristique senectus</p>
+          <h3 class="name_head"> Subham Singha</h3>
+          <p>President</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("rd.jpg", :class=>"img-circle") %>
+      <div class="carousel-caption">
+          <p class = "car_text">et netus et malesuada fames ac turpis egestas. Etiam sit amet dolor sit amet leo faucibus dignissim a nec est. Nullam suscipit neque non nunc consequat congue. Maecenas posuere ipsum eu nunc laoreet, sed convallis lorem dapibus. Suspendisse interdum ultrices</p>
+          <h3 class="name_head"> Harshit Kumar</h3>
+          <p>?????</p>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left hidden-xs" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right hidden-xs" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+</div>
+
+
+</section> <!-- about-wrapper -->
+
+
+<section class="footer-wrapper">
+ <div class="pagination-centered">
+     <h2 class="heading_register">CONTACT US</h2>
+ </div>
+
+</section> <!-- footer-wrapper -->

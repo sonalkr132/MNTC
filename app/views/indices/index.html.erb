@@ -131,3 +131,47 @@
     </div>
   </div>
 </section> <!-- register-wrapper -->
+
+
+<%= form_for(@index, user.new) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %> 
+
+  <div class="n-thread">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="n-thread">
+    <%= f.label :college %>
+    <%= f.text_field :college%>
+  </div>
+   <div class="n-thread">
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+  </div>
+  <div class="n-thread">
+    <%= f.label :department %>
+    <%= f.text_field :department%>
+  </div>
+   <div class="n-thread">
+    <%= f.label :mobile %>
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="n-thread">
+    <%= f.label :email %>
+    <%= f.text_field :email%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Post' %>
+  </div>
+<% end %>
