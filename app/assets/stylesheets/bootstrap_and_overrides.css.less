@@ -10,7 +10,7 @@ body {
 padding-top: 0px;
 }
 .navbar .nav{
-	margin:0 0 0 31%;
+	margin:0 0 0 25%;
 	font-size: 1.2em;
 }
 .navbar{
@@ -70,11 +70,46 @@ height: 609px;
 }
 
 .pull-up{
-  margin: 13% !important;
+  margin: 0 0 18% 0 !important;
 padding: 0px !important;
-font-size: 5em;
-color: white !important;
+}
 
+
+
+.car_text_new{
+  font-family: 'Lato';
+  color: #CEC6C6 !important;
+  font-size: 13em !important;
+  text-shadow:  9px 10px 0 #999586, 20px 20px 0 #637B88, 30px 30px 0 #999586, 40px 40px 0 #637B88;
+}
+.car_text2{
+  font-size: 5em!important;
+  color: rgb(162, 153, 153) !important;
+  text-shadow:  2px 3px 0px #eee, 6px 5px 0px #707070;
+}
+body { font-family: Consolas, monospace; }
+
+.var { 
+    position: relative; 
+    float: left;
+    font-size:80%;
+}
+
+.var .new_var {
+    position:absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white; /* same as background */
+    border-left: .1em solid black;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-animation: typing 5s steps(8, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
 }
 // Classes
 .center-block {
@@ -232,6 +267,7 @@ line-height: 1.5em;
   color: #ffffff;
   background-image:none;
   border: none;
+  z-index:100;
 }
 
 .carousel-control.right {
@@ -244,11 +280,12 @@ line-height: 1.5em;
   color: #ffffff;
   background-image:none;
   border: none;
+  z-index:100;
 }
 
 .carousel-caption{
 background: none;
-margin: 0 5% -17% 0;
+margin: 0 5% -23% 0;
 color: #000000 !important;
 text-shadow: none;
 padding: 0 5% 0 8%;
