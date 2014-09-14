@@ -30,11 +30,13 @@
 
 .event_head{
 	margin: 4% 0px 0px 38%;
+	font-family: 'PT Sans', sans-serif;
 }
 .event_cont{
 	margin: 1% 1% 0px 38%;
    font-size: 1.3em;
-   text-align: left;
+   text-align: justify;
+   font-family: 'Ubuntu', sans-serif;
 
 }
 
