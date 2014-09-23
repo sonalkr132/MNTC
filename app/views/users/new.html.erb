@@ -9,10 +9,10 @@
         <a class="brand" href="#"><%= image_tag("ank_logo.png", class: "mntc-logo") %></a>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "About Us" %></li>
-            <li><%= link_to "Events" %></li>
-            <li><%= link_to "Sponser Us" %></li>
-            <li><%= link_to "Contact Us" %></li>
+            <li><a href="#events"> Events </a></li>
+            <li><a href="#sponsers"> Sponser Us</a></li>
+            <li><a href="#register"> Register</a></li>
+            <li><a href="#contact">About Us</a></li>
             <li><button type="button" class="btn foo-support">REGISTER</button></li>
           </ul>
         </div>
@@ -62,7 +62,7 @@
   <a class="carousel-control right upp hidden-xs" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
-<section class="events-wrapper">
+<section id= "events" class="events-wrapper">
   <div class="container">
     
        
@@ -124,7 +124,7 @@
   </div>
 </section> <!-- events-wrapper -->
 
-<section class="sponsers-wrapper">
+<section id="sponsers" class="sponsers-wrapper">
   <div class="container">
     <div class="pagination-centered">
      <h1 class="heading_top h_sponser">SPONSERS</h1>
@@ -152,7 +152,7 @@
 <br>
 </section> <!-- sponsers-wrapper -->
 
-<section class="register-wrapper">
+<section id="register" class="register-wrapper">
   <div class="contianer">
    <div class="pagination-centered">
      <h1 class="heading_register">Register</h1>
@@ -216,7 +216,7 @@
   </div>
 </section> <!-- register-wrapper -->
 
-<section class="about-wrapper">
+<section id="contact" class="about-wrapper">
 <div class="pagination-centered">
      <h2 class="heading_about">ABOUT US</h2>
      <p class="event_below"> This Club Was Possible Because Of These Awesome People</p>
@@ -296,13 +296,32 @@
  <div class="pagination-centered">
      <h2 class="heading_register contact">CONTACT US</h2>
       
-     
+       <a href="https://www.facebook.com/AnkTheKnowledgeFest?ref=br_tf">
         <%= image_tag("Facebook_icon.png", :class=>"img-rounded") %>
+       </a>
+       <a href="https://plus.google.com/u/0/108422834569313978587/about">
         <%= image_tag("google-plus-icon-square.jpg", :class=>"img-rounded") %>
-        <%= image_tag("email-blue-icon.png", :class=>"img-rounded") %>
+       </a>
+        <a type="button" href="#test_modal" data-toggle="modal">
+         <%= image_tag("email2-blue-icon.png", :class=>"img-rounded") %>
+        </a>
         <p class=" h_sponser"> Show us your love! Follow us on facebbok and google plus. </p>
-    <div class="footer"> Designed and developed by MATHS AND TECH CLUB - NIT DURGAPUR</div>
-     
+       
+       
+
+<div class="modal fade" id="test_modal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h4>You can mail us at: </h4>
+  </div>
+  <div class="modal-body">
+     <%= image_tag("email-blue-icon.png", :class=>"img-pop") %>
+    <p>god_knows_where@everymail.com</p>
+  </div>
+
+
+</div>
+    <div class="footer"> Designed and developed by MATHS AND TECH CLUB - NIT DURGAPUR</div>  
  </div>
 
 </section> <!-- footer-wrapper -->
