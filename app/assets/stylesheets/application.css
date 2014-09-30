@@ -21,7 +21,7 @@
 }
 
 .heading_top{
-	margin: 60px 0px 0px 0px;
+	margin: 50px 0px 0px 0px;
 }
 
 .event_line{
@@ -57,14 +57,12 @@
 .about-wrapper{
 	margin-top: 4%;
 }
-
-.css-typing
-{
-    
-    padding: 20px;
-    
-    
+.register_line{
+	margin: -3% 0 0.8% -0.5%;
 }
+
+
+
 
 
 
