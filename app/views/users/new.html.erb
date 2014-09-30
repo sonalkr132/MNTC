@@ -1,3 +1,4 @@
+ <section id="section1" class="cd-section">
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
@@ -13,7 +14,6 @@
             <li><a href="#sponsers"> Sponser Us</a></li>
             <li><a href="#register"> Register</a></li>
             <li><a href="#contact">About Us</a></li>
-            <li><button type="button" class="btn foo-support">REGISTER</button></li>
           </ul>
         </div>
       </div>
@@ -34,36 +34,12 @@
   <a class="carousel-control left upp hidden-xs" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right upp hidden-xs" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
+</section><!-- cd-section -->
 
 
 
-<div id="wrapper">
-  <h1>3d animation using pure CSS3<small>Movie Posters Example</small></h1>
-  <h2><a href="http://www.marcofolio.net/" title="Visit Marcofolio.net">Marcofolio.net</a></h2>
-  <div id="content">
-    <ul id="movieposters">
-      <li>
-        <%= image_tag("01_iron_man_2.jpg") %>
-        <div class="movieinfo">
-          <h3>Iron Man 2</h3>
-        </div>
-      </li>
-      <li>
-        <%= image_tag("02_the_last_airbender.jpg") %>
-        <div class="movieinfo">
-          <h3>The Last Airbender</h3>
-        </div>
-      </li>
-      <li>
-        <%= image_tag("03_tron_legacy.jpg") %>
-        <div class="movieinfo">
-          <h3>Tron Legacy</h3>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
+<section id="section2" class="cd-section">
+<!--------------------------------- events --------------------------------------> 
 
 <section id= "events" class="events-wrapper">
   <div class="container">
@@ -77,7 +53,14 @@
 
   <div class="container box">
 
-    <div class="col-md-4 event_img"><%= image_tag("hour.jpg") %></div>
+    <div class="col-md-4 event_img">
+      <div class="wrapper">
+       <div class="inner">
+      <%= image_tag("hour.jpg") %>
+       </div>
+      </div>
+
+    </div>
     <div class="col-md-1 small_box">1</div>
     <h3 class="event_head">Hour Glass</h3>
     <p class="event_cont">
@@ -89,7 +72,13 @@
 
    <div class="container box">
 
-    <div class="col-md-4 event_img altr"><%= image_tag("simplex.jpg") %></div>
+    <div class="col-md-4 event_img altr">
+      <div class="wrapper">
+       <div class="inner-alt">
+      <%= image_tag("simplex.jpg") %>
+        </div>
+      </div>
+    </div>
     <div class="col-md-1 small_box b_altr">2</div>
     <h3 class="event_head h_altr">Simplex</h3>
     <p class="event_cont c_altr">
@@ -100,7 +89,13 @@
 
    <div class="container box">
 
-    <div class="col-md-4 event_img"><%= image_tag("kr.jpg") %></div>
+    <div class="col-md-4 event_img">
+       <div class="wrapper">
+       <div class="inner">
+      <%= image_tag("kr.jpg") %>
+       </div>
+      </div>
+    </div>
     <div class="col-md-1 small_box">3</div>
     <h3 class="event_head">Kriptic</h3>
     <p class="event_cont">
@@ -112,7 +107,13 @@
 
    <div class="container box bottom">
 
-    <div class="col-md-4 event_img altr"><%= image_tag("constructo.jpg") %></div>
+    <div class="col-md-4 event_img altr">
+        <div class="wrapper">
+       <div class="inner-alt">
+      <%= image_tag("constructo.jpg") %>
+       </div>
+      </div>
+    </div>
     <div class="col-md-1 small_box b_altr">4</div>
     <h3 class="event_head h_altr">Constructo</h3>
     <p class="event_cont c_altr">
@@ -126,7 +127,10 @@
       </div> 
   </div>
 </section> <!-- events-wrapper -->
+</section><!-- cd-section -->
 
+
+<section id="section3" class="cd-section">
 <section id="sponsers" class="sponsers-wrapper">
   <div class="container">
     <div class="pagination-centered">
@@ -154,7 +158,9 @@
   <br>
 <br>
 </section> <!-- sponsers-wrapper -->
+</section><!-- cd-section -->
 
+<section id="section4" class="cd-section">
 <section id="register" class="register-wrapper">
   <div class="contianer">
    <div class="pagination-centered">
@@ -218,7 +224,10 @@
  </div>
   </div>
 </section> <!-- register-wrapper -->
+</section><!-- cd-section -->
 
+
+<section id="section5" class="cd-section">
 <section id="contact" class="about-wrapper">
 <div class="pagination-centered">
      <h2 class="heading_about">ABOUT US</h2>
@@ -293,8 +302,10 @@
 
 
 </section> <!-- about-wrapper -->
+</section><!-- cd-section -->
 
 
+<section id="section6" class="cd-section">
 <section class="footer-wrapper">
  <div class="pagination-centered">
      <h2 class="heading_register contact">CONTACT US</h2>
@@ -328,3 +339,4 @@
  </div>
 
 </section> <!-- footer-wrapper -->
+</section><!-- cd-section -->

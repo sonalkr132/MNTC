@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140911052657) do
+ActiveRecord::Schema.define(:version => 20140923152515) do
 
   create_table "indices", :force => true do |t|
     t.datetime "created_at", :null => false
