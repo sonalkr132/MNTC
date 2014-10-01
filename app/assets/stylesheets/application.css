@@ -21,7 +21,7 @@
 }
 
 .heading_top{
-	margin: 50px 0px 0px 0px;
+	margin: 2.7% 0px 0px 0px;
 }
 
 .event_line{
@@ -51,7 +51,11 @@
 .heading_register{
 	color: white;
 	margin-top: 0px;
-	padding-top: 4%;
+	padding-top: 2%;
+}
+
+.heading_about{
+	padding-top: 2%;
 }
 
 .about-wrapper{
@@ -61,6 +65,21 @@
 	margin: -3% 0 0.8% -0.5%;
 }
 
+#error_explanation{
+	font-size: 1em;
+}
+.error_exp{
+	color:black !important;
+	    list-style-type: none;
+}
+
+#user-widget{
+	margin: -9.1% 0% 3% 49%;
+}
+
+#sign_in{
+padding: 2.9% 8%;
+}
 
 
 

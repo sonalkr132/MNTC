@@ -13,7 +13,9 @@
    </section>
     <p class="pink-color">
     |<br>
+    </p>
     <div class="mntc-pre"> Maths and Tech Club presents</div><br>
+    <p class="pink-color">
     |<br>
     </p>
    </div>
@@ -120,17 +122,26 @@
      <h1 class="heading_top h_sponser">SPONSERS</h1>
      <p class="event_below h_sponser"> Why do you want to give us your money</p>
      <h1 class="event_line h_sponser"> _ </h1>
-      <div class="col-md-12 event_img">&nbsp;</div>
+      </div>
+       
+     <ul class="why_sponser">
+      <li>Extensive reach of posters to several colleges and corporates all over the region</li>
+      <li>Publicity through articles and advertisements in regional dailies, media channels
+        , social netwoeking sites etc</li>
+      <li> Plublicity through flex, banners, information booklets and other paraphenalia</li>
+      <li> Apperance of the sponser name and logo in the website of ANK 2014</li>
+     </ul>
+      <div class="pagination-centered">
        <div class="col-md-12 event_img">&nbsp;</div>
      <p class="previous_spon"> our previous sponsers</p>
-     <div class = "row">
+     <div class = "row fix-row">
      <div class="col-md-3 event_img"><%= image_tag("flo.png") %></div>
       <div class="col-md-3 event_img"><%= image_tag("lee.png") %></div>
        <div class="col-md-3 event_img"><%= image_tag("test.png") %></div>
        
         <div class="col-md-3 event_img"><%= image_tag("lol.png") %></div>
        </div>
-       <div class = "row">
+       <div class = "row fix-row">
          <div class="col-md-3 col-md-offset-1"><%= image_tag("teach.png") %></div>
         
           <div class="col-md-3 "><%= image_tag("sav.png") %></div>
@@ -163,12 +174,18 @@
 </svg>
 
 <div class="reg_form">
-<%= form_for(@user) do |f| %>
+<%= form_for @user, url: {:action => "create" , :anchor => "section4"} do |f| %>
+   <% if !flash[:notice].blank? %>
+      <div class="notice">
+        <%= flash[:notice] %>
+      </div>
+     <% end %>
+
   <% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:
 
-      <ul>
+      <ul class="error_exp">
       <% @user.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
@@ -199,6 +216,16 @@
     <%= f.submit 'REGISTER', :class=>"foo" %>
   </div>
 <% end %>
+
+<div id="user-widget">
+  <% if current_user %>
+    Welcome <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    or &nbsp; &nbsp;
+    <%= link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo" %>
+  <% end %>
+</div>
 </div>
 <br>
 <br>

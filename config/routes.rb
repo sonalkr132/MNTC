@@ -1,9 +1,13 @@
 Mntc::Application.routes.draw do
-  resources :indices
+  root :to => "users#new"
+  match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+  match 'auth/failure', to: redirect('/'), via: [:get, :post]
+  match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
   get 'users/list' => 'users#list'
 
   resources :users
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

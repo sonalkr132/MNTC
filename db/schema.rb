@@ -11,22 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140923152515) do
-
-  create_table "indices", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20140911052657) do
 
   create_table "users", :force => true do |t|
-    t.string   "name",       :limit => 50
-    t.string   "college",    :limit => 50
+    t.string   "name",             :limit => 50
+    t.string   "college",          :limit => 50
     t.integer  "year"
     t.string   "department"
     t.string   "mobile"
-    t.string   "email",                    :default => "", :null => false
-    t.datetime "created_at",                               :null => false
-    t.datetime "updated_at",                               :null => false
+    t.string   "email",                          :default => "", :null => false
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
   end
 
 end

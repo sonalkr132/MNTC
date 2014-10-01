@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+
   
  def create
     # Instantiate a new object using form parameters
@@ -16,7 +17,7 @@ class UsersController < ApplicationController
     # Save the object
     if @user.save
       flash[:notice] = "user created."
-      redirect_to(:action => 'index')
+      redirect_to(:action => 'new')
     else
       # If save fails, redisplay the form so user can fix problems
       render('new')
