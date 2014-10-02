@@ -1,11 +1,6 @@
 class UsersController < ApplicationController
  
 
- def index
-    @users = User.all
-  end
-
-
   def new
     @user = User.new
   end
@@ -16,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     # Save the object
     if @user.save
-      flash[:notice] = "user created."
+      flash[:notice] = "You are registered"
       redirect_to(:action => 'new')
     else
       # If save fails, redisplay the form so user can fix problems

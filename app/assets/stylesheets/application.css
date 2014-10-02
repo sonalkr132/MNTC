@@ -74,11 +74,33 @@
 }
 
 #user-widget{
-	margin: -9.1% 0% 3% 49%;
+	margin: -9.2% 0 3% 27%;
 }
 
 #sign_in{
 padding: 2.9% 8%;
+}
+
+.face-button{
+	margin-left: 26%;
+}
+
+.admin-log{
+	width:1.5%;
+	float: right;
+}
+
+.login-tab{
+   margin: 7% 0 0 22%;
+}
+
+.gap{
+   padding-left: 7%;
+}
+
+.fb-sign:hover{
+	text-decoration: none;
+    color: white;
 }
 
 

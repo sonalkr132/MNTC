@@ -1,0 +1,27 @@
+<div class="user list">
+	<h2>Users</h2>
+	<table class="listing table table-bordered" summary="User list">
+		<tr class="header">
+			<th>Name</th>
+			<th>College</th>
+			<th>Year</th>
+			<th>Department</th>
+			<th>Mobile</th>
+			<th>Email</th>
+			<th>Created at</th>
+		</tr>
+		<% @users.each do |user| %>
+		<tr>
+			<td><%= user.name %></td>
+			<td><%= user.college %></td>
+			<td><%= user.year %></td>
+			<td><%= user.department %></td>
+			<td><%= user.mobile %></td>
+			<td><%= user.email %></td>
+			<td><%= user.created_at %></td>
+	    </tr>
+	    <% end %>
+	</table>
+</div>
+			
+			

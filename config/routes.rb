@@ -1,12 +1,19 @@
 Mntc::Application.routes.draw do
-  root :to => "users#new"
+
+  get 'access/menu' => 'access#menu'
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
-  get 'users/list' => 'users#list'
-
   resources :users
+
+  get 'access/logout' => 'access#logout'
+  post 'access/attempt_login' => 'access#attempt_login'
+  get 'access/login' => 'access#login'
+  get 'access' => 'access#index'
+  get 'access/index' => 'access#index'
+
+  resources :admin_user
 
 
   # The priority is based upon order of creation:
@@ -65,4 +72,6 @@ Mntc::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+  root :controller => 'users', :action => :new
 end

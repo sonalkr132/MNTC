@@ -219,11 +219,13 @@
 
 <div id="user-widget">
   <% if current_user %>
-    Welcome <strong><%= current_user.name %></strong>!
+    <strong><%= current_user.name %></strong>!
     <%= link_to "Sign out", signout_path, id: "sign_out" %>
   <% else %>
+    <div class="face-button">
     or &nbsp; &nbsp;
-    <%= link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo" %>
+    <%= link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo fb-sign" %>
+    </div>
   <% end %>
 </div>
 </div>
@@ -251,7 +253,7 @@
     <div class="active item">
       <%= image_tag("aj.jpg", :class=>"img-circle") %>
       <div class="carousel-caption">
-          <p class = "car_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum facilisis dui in pellentesque. Integer venenatis dignissim felis, ut dignissim erat aliquet vitae. Cras tincidunt imperdiet iaculis. </p>
+          <p class = "car_text">A prodigy star, his charm and humour never fail to keep up fun on the high. Coiner of terms like “perma-chaap” and “lapet lia”, he has truly been one of the pillars of our club’s standing glory.</p>
           <h3 class="name_head"> Apurva Jha</h3>
           <p>Treasurer</p>
       </div>
@@ -259,7 +261,7 @@
     <div class="item">
       <%= image_tag("ak.jpg", :class=>"img-circle") %>
       <div class="carousel-caption">
-          <p class = "car_text">Sed erat sapien, varius vitae porttitor sed, aliquet non turpis. In nibh purus, lacinia eget aliquet non, placerat ultricies lectus. Cras a mi ornare, gravida neque eget, maximus urna. Donec pulvinar lorem vel placerat condimentum.</p>
+          <p class = "car_text">The Electrical Queen, an amalgamation of excellence and innocence, this adept Co-Convenor has been blessed with the gift of the gab, that makes her an epitome of perfection.</p>
           <h3 class="name_head"> Atreyee Kundu</h3>
           <p>Co convenor</p>
       </div>
@@ -267,23 +269,15 @@
     <div class="item">
       <%= image_tag("dm.jpg", :class=>"img-circle") %>
       <div class="carousel-caption">
-          <p class = "car_text">Integer imperdiet urna nisl. Etiam condimentum tellus quis turpis feugiat molestie. Curabitur feugiat in dolor sed finibus. Morbi pulvinar maximus lacus at faucibus. Pellentesque eros lectus, condimentum at libero tristique, convallis accumsan magna. Vestibulum blandit risus in lorem fringilla</p>
+          <p class = "car_text">A dextrous coder, this techie guy has always backed us up with his air of cool in every demand of situation. The General Secretary of the club, he has been the backbone of our team.</p>
           <h3 class="name_head"> Debjit Mondal</h3>
           <p>General Secretary</p>
       </div>
     </div>
     <div class="item">
-      <%= image_tag("gt.jpg", :class=>"img-circle") %>
-     <div class="carousel-caption">
-          <p class = "car_text">eu molestie tortor elementum. Sed at enim lobortis, auctor sem id, mollis mauris. Sed accumsan venenatis maximus. Vivamus in hendrerit augue.Suspendisse eget nulla facilisis dolor aliquam rhoncus id at leo. Curabitur ut tempor tellus. Cras maximus, odio sit</p>
-          <h3 class="name_head"> Gopesh Tulsyan</h3>
-          <p>Tech Head</p>
-      </div>
-    </div>
-    <div class="item">
       <%= image_tag("mj.jpg", :class=>"img-circle") %>
        <div class="carousel-caption">
-          <p class = "car_text">in hendrerit enim magna non justo. Nam eget ullamcorper metus. Vestibulum interdum quis dui feugiat sagittis. Aliquam euismod vulputate risus, vitae blandit ligula fermentum egestas. Proin a elit ac nulla facilisis accumsan. Pellentesque molestie tincidunt dui eget porta</p>
+          <p class = "car_text">The calm and composed, sincere guy, is a big time techie.This convenor proves to be a gem of our team with his commendable intellect and coding skills.</p>
           <h3 class="name_head"> Mayank Jha</h3>
           <p>Convenor</p>
       </div>
@@ -291,17 +285,9 @@
     <div class="item">
       <%= image_tag("ss.jpg", :class=>"img-circle") %>
        <div class="carousel-caption">
-          <p class = "car_text">Etiam ullamcorper arcu in ante viverra aliquam ut eu lectus. Nullam non massa eros. Suspendisse sollicitudin ut diam suscipit sagittis. Fusce ut quam vitae justo mattis placerat ut porttitor neque. Ut sed ligula venenatis feugiat ex id, rhoncus sapien. Proin laoreet nunc eget magna dignissim rutrum. Pellentesque habitant morbi tristique senectus</p>
+          <p class = "car_text">The superman of our club, our President and a die-hard Manchester United fan, presents before us a plethora of talent in different spheres of life. This mechie allrounder has been the root of cognition and hence, an inspiration for us all.</p>
           <h3 class="name_head"> Shubham Singha</h3>
           <p>President</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag("rd.jpg", :class=>"img-circle") %>
-      <div class="carousel-caption">
-          <p class = "car_text">et netus et malesuada fames ac turpis egestas. Etiam sit amet dolor sit amet leo faucibus dignissim a nec est. Nullam suscipit neque non nunc consequat congue. Maecenas posuere ipsum eu nunc laoreet, sed convallis lorem dapibus. Suspendisse interdum ultrices</p>
-          <h3 class="name_head"> Harshit Kumar</h3>
-          <p>?????</p>
       </div>
     </div>
   </div>
@@ -343,10 +329,25 @@
     <p>god_knows_where@everymail.com</p>
   </div>
 
-
 </div>
-    <div class="footer"> Designed and developed by MATHS AND TECH CLUB - NIT DURGAPUR</div>  
- </div>
+    <div class="footer"> Designed and developed by MATHS AND TECH CLUB - NIT DURGAPUR
+    <a type="button" href="#test_modal2" data-toggle="modal">
+         <%= image_tag("set.png", :class=>"admin-log") %>
+    </a>
+   </div>
+
+  <div class="modal fade" id="test_modal2">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h4>Admin login: </h4>
+  </div>
+  <div class="modal-body">
+    <%= render :partial => "access/login"%>
+  </div>
+
+  </div>
+
+  </div><!-- paginate -->
 
 </section> <!-- footer-wrapper -->
 </section><!-- cd-section -->

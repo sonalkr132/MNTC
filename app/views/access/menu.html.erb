@@ -1,0 +1,3 @@
+<div class="identity">Logged in as: <%= session[:username] %></div>
+ <li><%= link_to("Logout", :action => 'logout') %></li>
+<%= render :partial => "users/index", :locals => {:user => @user} %>
