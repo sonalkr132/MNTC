@@ -46,7 +46,7 @@
       </div>
 
     </div>
-    <div class="col-md-1 small_box">1</div>
+    <div class="col-md-1 small_box hidden-md hidden-sm hidden-xs">1</div>
     <h3 class="event_head">Hour Glass</h3>
     <p class="event_cont">
       Do you think you can beat time? Do you have what it takes? Come and prove it to yourself!
@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-1 small_box b_altr">2</div>
+    <div class="col-md-1 small_box b_altr hidden-md hidden-sm hidden-xs">2</div>
     <h3 class="event_head h_altr">Simplex</h3>
     <p class="event_cont c_altr">
      Alogrithm and coding: Use your mathematical skills and computational skills together and make the solving of the questions simplex. Simplex is an onsite programming event which is not mere mathematics or programming, both have to be used together, adding your mathematical approach makes the solving quicker and easier
@@ -81,7 +81,7 @@
        </div>
       </div>
     </div>
-    <div class="col-md-1 small_box">3</div>
+    <div class="col-md-1 small_box hidden-md hidden-sm hidden-xs">3</div>
     <h3 class="event_head">Kriptic</h3>
     <p class="event_cont">
      Cryptology - Ujit fwfou jt hpjoh up cf bxftpnf !!!<br>
@@ -99,7 +99,7 @@
        </div>
       </div>
     </div>
-    <div class="col-md-1 small_box b_altr">4</div>
+    <div class="col-md-1 small_box b_altr hidden-md hidden-sm hidden-xs">4</div>
     <h3 class="event_head h_altr">Constructo</h3>
     <p class="event_cont c_altr">
      Do you have love for creating brand new stuff? DO you find the satisfaction in watching any self-made thing working? Then this is your arena. Regain your can-do attitude now as we bring to you an oppurtunity to unleash the creative skills in you, to make something out of nothing!! Grab it all as you are provided with virtual money to shop the raw materials for your model.
@@ -222,9 +222,14 @@
     <strong><%= current_user.name %></strong>!
     <%= link_to "Sign out", signout_path, id: "sign_out" %>
   <% else %>
-    <div class="face-button">
+    <div class="face-button hidden-md hidden-sm hidden-xs">
+    
     or &nbsp; &nbsp;
+   
     <%= link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo fb-sign" %>
+    </div>
+    <div class="face-button hidden-lg">
+       <%= link_to "Facebook", "/auth/facebook", id: "small_sign_in", :class=> "foo fb-sign" %>
     </div>
   <% end %>
 </div>
@@ -246,7 +251,7 @@
      <p class="event_below"> This Club Was Possible Because Of These Awesome People</p>
       <h1 class="event_line"> _ </h1>
 </div>
-  <div id="myCarousel2" class="carousel slide bottom_car" style="width: 70%"  data-interval="false">
+  <div id="myCarousel2" class="carousel slide bottom_car hidden-xs" style="width: 70%"  data-interval="false">
   
   <!-- Carousel items -->
   <div class="carousel-inner">
@@ -286,7 +291,7 @@
       <%= image_tag("ss.jpg", :class=>"img-circle") %>
        <div class="carousel-caption">
           <p class = "car_text">The superman of our club, our President and a die-hard Manchester United fan, presents before us a plethora of talent in different spheres of life. This mechie allrounder has been the root of cognition and hence, an inspiration for us all.</p>
-          <h3 class="name_head"> Shubham Singha</h3>
+          <h3 class="name_head"> Shubham Sinha</h3>
           <p>President</p>
       </div>
     </div>
@@ -294,6 +299,24 @@
   <!-- Carousel nav -->
   <a class="carousel-control left hidden-xs" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right hidden-xs" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+</div>
+
+<div class="pagination-centered only_small visible-xs">
+   <%= image_tag("aj.jpg", :class=>"img-circle") %>
+   <h3 class="name_head"> Apurva Jha</h3>
+          <p>Treasurer</p>
+    <%= image_tag("ak.jpg", :class=>"img-circle") %>
+    <h3 class="name_head"> Atreyee Kundu</h3>
+          <p>Co convenor</p>
+    <%= image_tag("dm.jpg", :class=>"img-circle") %>
+      <h3 class="name_head"> Debjit Mondal</h3>
+          <p>General Secretary</p>
+    <%= image_tag("mj.jpg", :class=>"img-circle") %>
+     <h3 class="name_head"> Mayank Jha</h3>
+          <p>Convenor</p>
+    <%= image_tag("ss.jpg", :class=>"img-circle") %>
+   <h3 class="name_head"> Shubham Sinha</h3>
+          <p>President</p>
 </div>
 
 

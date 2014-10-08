@@ -1,0 +1,77 @@
+@media (min-width: 1100px) and (max-width: 1260px) {
+.face-button {
+margin: -14% 0% 0% 31%;
+}
+input.foo {
+padding: 2% 7% 2% 8%;
+}
+}
+
+@media (min-width: 240px) and (max-width: 769px){
+.img-circle {
+margin: 0% 0 0 0%;
+}
+}
+
+@media (min-width: 420px) and (max-width: 1000px) {
+.carousel-caption {
+margin: 0% 5% -31% 0;
+}
+.header-ank{
+	font-size: 5em;
+}
+
+.h_altr {
+margin: 4% 0px 3% 44%;
+}
+
+.wrapper{
+	width: 27em;
+}
+
+.c_altr {
+margin: 1% 43% 1% 2%;
+}
+
+#user-widget {
+margin: -11.2% -14% 3% 13%;
+}
+
+.face-button {
+margin: 18% 16% 13% -11%;
+}
+
+#sign_in{
+	padding: 2.5% 7%;
+}
+
+.carousel-inner{
+	padding: 0% 0% 47% 0%;
+}
+
+.img-circle{
+	width: 22%;
+}
+.event_cont {
+margin: 1% 6% 3% 6%;
+}
+.foo {
+margin: 10% 0% 1% 0%;
+padding: 3% 7% 3% 8%;
+}
+
+.reg_form {
+margin: -2.5% 24% 0 25%;
+}
+
+}
+
+@media (min-width: 420px) and (max-width: 1000px) {
+.carousel-caption {
+margin: 0% 5% -32% 0;
+}
+}
+
+
+
+

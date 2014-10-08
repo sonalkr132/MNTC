@@ -1,0 +1,65 @@
+
+@media (min-width: 240px) and (max-width: 420px) {
+.header-ank{
+	font-size: 4em;
+}
+
+.h_altr {
+margin: 4% 0px 3% 44%;
+}
+
+.wrapper{
+	width: 27em;
+}
+
+.c_altr {
+margin: 1% 43% 1% 2%;
+}
+
+#user-widget {
+margin: -11.2% -14% 3% 13%;
+}
+
+.face-button {
+margin-left: 33%;
+}
+
+#sign_in{
+	padding: 2.5% 7%;
+}
+
+.carousel-inner{
+	padding-bottom: 37%;
+}
+
+.img-circle{
+	width: 22%;
+}
+.header-sharing {
+	font-size: 1.2em;
+}
+.face-button {
+margin: 11% 24% 16% 0%;
+}
+
+.foo {
+margin: 4% 1% 2% 0% !important;
+}
+
+.reg_form {
+margin: -2.5% 24% 0 25%;
+}
+
+
+.wrapper {
+width: 20em;
+}
+.event_cont {
+margin: 1% 6% 3% 6%;
+}
+
+a#small_sign_in {
+padding: 4% 3% 3% 3%;
+}
+
+}
