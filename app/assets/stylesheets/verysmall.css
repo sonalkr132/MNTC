@@ -1,24 +1,62 @@
+@media (min-width: 420px) and (max-width: 480px) {
+.wrapper{
+	width:106% !important;
+}
+}
 
 @media (min-width: 240px) and (max-width: 420px) {
 .header-ank{
 	font-size: 4em;
 }
 
+body {
+padding: 0px;
+}
+
+h2.header-know {
+font-size: 1.1em;
+letter-spacing: 7px;
+}
+
+h3.header-sharing {
+margin-top: 22%;
+}
+
+p.text-muted.event_below {
+font-size: 1.1em;
+}
+
 p.event_cont {
 font-size: 1.1em;
 }
 
-.wrapper {
-width: 16.5em;
+.inner-alt {
+width: 94%;
 }
 
 .h_altr {
-margin: 4% 0px 3% 44%;
+margin: 4% 0px 3% 31%;
+}
+
+p.event_cont.c_altr {
+text-align: justify;
+}
+
+.wrapper {
+width: 106%;
 }
 
 
 .c_altr {
 margin: 1% 43% 1% 2%;
+}
+
+p.event_below.h_sponser {
+font-size: 1.1em;
+}
+
+li {
+font-size: 0.9em;
 }
 
 #user-widget {
@@ -37,6 +75,10 @@ margin-left: 33%;
 	padding-bottom: 37%;
 }
 
+p.event_below {
+font-size: 1.1em;
+}
+
 .img-circle{
 	width: 22%;
 }
@@ -52,9 +94,8 @@ margin: 4% 1% 2% 0% !important;
 }
 
 .reg_form {
-margin: -2.5% 24% 0 25%;
+margin: -2.5% 10% 0 12%;
 }
-
 
 .event_cont {
 margin: 1% 6% 3% 6%;

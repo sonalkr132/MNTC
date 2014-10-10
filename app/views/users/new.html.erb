@@ -162,7 +162,7 @@
      <p class="event_below h_sponser"> Enter your details here </p>
      <h1 class="register_line h_sponser"> _ </h1>
    
-<svg height="70" width="70" class="glif">
+<svg height="70" width="70" class="glif hidden-xs">
   <circle cx="30" cy="30" r="25" stroke="white" stroke-width="3" fill="#348DD3" text="V"/>
   <path d="M17,26 L30,38 L43,26" style="stroke: #ffffff; fill:white; stroke-width: 3px"/> 
   Sorry, your browser does not support inline SVG.  
@@ -213,8 +213,20 @@
   </div>
 
   <div class="actions">
-    <%= f.submit 'REGISTER', :class=>"foo" %>
+    <% f.submit 'REGISTER', :class=>"foo" %>
+    <a type="button" href="#test_modal3" data-toggle="modal", class="foo ">REGISTER</a>
   </div>
+
+  <div class="modal fade" id="test_modal3">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h4>Sorry! </h4>
+  </div>
+  <div class="modal-body">
+    <p>Registeration hasn't started yet!</p>
+  </div>
+  </div><!-- test_modal -->
+
 <% end %>
 
 <div id="user-widget">
@@ -224,12 +236,12 @@
   <% else %>
     <div class="face-button hidden-md hidden-sm hidden-xs">
     
-    or &nbsp; &nbsp;
+    <!-- or --> &nbsp; &nbsp;
    
-    <%= link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo fb-sign" %>
+    <% link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo fb-sign" %>
     </div>
     <div class="face-button hidden-lg">
-       <%= link_to "Facebook", "/auth/facebook", id: "small_sign_in", :class=> "foo fb-sign" %>
+       <% link_to "Facebook", "/auth/facebook", id: "small_sign_in", :class=> "foo fb-sign" %>
     </div>
   <% end %>
 </div>
@@ -338,7 +350,7 @@
         <a type="button" href="#test_modal" data-toggle="modal">
          <%= image_tag("email2-blue-icon.png", :class=>"img-rounded") %>
         </a>
-        <p class=" h_sponser"> Show us your love! Follow us on facebbok and google plus. </p>
+        <p class=" h_sponser"> Show us your love! Follow us on facebook and google plus. </p>
        
        
 
@@ -349,13 +361,13 @@
   </div>
   <div class="modal-body">
      <%= image_tag("email-blue-icon.png", :class=>"img-pop") %>
-    <p>god_knows_where@everymail.com</p>
+    <p>mntc@gmail.com</p>
   </div>
 
 </div>
     <div class="footer"> Designed and developed by MATHS AND TECH CLUB - NIT DURGAPUR
     <a type="button" href="#test_modal2" data-toggle="modal">
-         <%= image_tag("set.png", :class=>"admin-log") %>
+         <%= image_tag("set.png", :class=>"admin-log hidden-xs") %>
     </a>
    </div>
 
