@@ -9,6 +9,10 @@
 	font-size: 4em;
 }
 
+input.foo {
+margin: 7% -1% 5% 0% !important;
+}
+
 body {
 padding: 0px;
 }
@@ -102,7 +106,7 @@ margin: 1% 6% 3% 6%;
 }
 
 a#small_sign_in {
-padding: 4% 3% 3% 3%;
+padding:4% 4% 3% 4%;
 }
 
 }

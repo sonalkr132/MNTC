@@ -5,12 +5,14 @@
     <%= image_tag("ank-logo.png", :class=>"ank-logo") %><br>
     |<br>
     </p>
+    
     <section class="banner-ank">
     <h1 class="header-ank"> ANK 2014</h1>
     <h2 class="header-know"> The Knowledge Fest</h2>
     <a class="register-link" href="#register">Register</a>
     <h3 class="header-sharing">Sharing Knowledge Beyond Books</h3>
    </section>
+ 
     <p class="pink-color">
     |<br>
     </p>
@@ -213,8 +215,8 @@
   </div>
 
   <div class="actions">
-    <% f.submit 'REGISTER', :class=>"foo" %>
-    <a type="button" href="#test_modal3" data-toggle="modal", class="foo ">REGISTER</a>
+    <%= f.submit 'REGISTER', :class=>"foo" %>
+    <!-- <a type="button" href="#test_modal3" data-toggle="modal", class="foo ">REGISTER</a> -->
   </div>
 
   <div class="modal fade" id="test_modal3">
@@ -238,10 +240,10 @@
     
     <!-- or --> &nbsp; &nbsp;
    
-    <% link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo fb-sign" %>
+    <%= link_to "Facebook", "/auth/facebook", id: "sign_in", :class=> "foo fb-sign" %>
     </div>
     <div class="face-button hidden-lg">
-       <% link_to "Facebook", "/auth/facebook", id: "small_sign_in", :class=> "foo fb-sign" %>
+       <%= link_to "Facebook", "/auth/facebook", id: "small_sign_in", :class=> "foo fb-sign" %>
     </div>
   <% end %>
 </div>
