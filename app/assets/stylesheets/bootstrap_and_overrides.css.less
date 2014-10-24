@@ -2,7 +2,56 @@
 
 
 
+//of event car
 
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      transition-property: opacity;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
+.reduce_h{
+  height: 320px !important;
+}
+
+.carousel-control 
+{
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+
+.fade_on{
+margin-top: 10%;
+}
+
+#myCarousel_4 {
+margin: 0.2% 0px 5% 0% !important;
+}
+
+//end of event car
 
 .wrapper {
   perspective: 1000px;
@@ -97,6 +146,7 @@ border-radius: 2px !important;
 .why_sponser{
   color: white !important;
   margin-top: 2%;
+  margin-right: 2%;
 }
 
 .row{
@@ -173,7 +223,6 @@ body { font-family: Consolas, monospace; }
 background-color: #EB2E24;
 font-size: 3em;
 color: #ffffff;
-width: 4%;
 padding: 25px 53px 30px 28px;
 margin: 70px 0px 0px -60px;
 border-style: solid;

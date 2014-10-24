@@ -18,6 +18,7 @@
 
 .event_below{
 	font-size: 1.3em;
+	margin: 1% 2% 1% 2%;
 }
 
 .heading_top{
@@ -40,6 +41,10 @@
 
 }
 
+.p_team{
+	margin: 0% 2% 0% 2%;
+}
+
 .bottom{
 	margin-bottom: 110px;
 }
@@ -59,7 +64,7 @@
 }
 
 .about-wrapper{
-	margin-top: 4%;
+	margin-top: 1%;
 }
 .register_line{
 	margin: -3% 0 0.8% -0.5%;

@@ -14,9 +14,7 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
-$('.carousel').carousel({
-    interval: false
-}) 
+$('.carousel').carousel();
 
 
 !function($){
