@@ -35,6 +35,10 @@ a#small_sign_in {
 margin: -14.5% -47% 0% 0;
 }
 
+.c_altr {
+margin: 1% 36% 1% 2% !important;
+}
+
 .reg_form {
 padding: 2% 0 5% 0;
 }
@@ -63,16 +67,24 @@ margin: 0% 5% -31% 0;
 }
 
 .h_altr {
-margin: 4% 0px 3% 29%;
-
+margin: 4% 43% 3% 29% !important;
 }
 
 .wrapper{
 	width: 27em;
 }
 
+.reduce_h{
+	padding: 0% 0% 6% 0% !important;
+}
+
+
 .c_altr {
-margin: 1% 43% 1% 2%;
+margin: 1% 55% 1% 2% !important;
+}
+
+.fade_on {
+margin-top: 7%;
 }
 
 #user-widget {
@@ -119,6 +131,63 @@ margin: 0% 5% -32% 0;
 margin: 4% 0px 3% 20%;
 }
 }
+
+@media (min-width: 980px) and (max-width: 1000px) {
+.c_altr {
+margin: 1% 42% 1% 2% !important;
+}
+
+.event_cont {
+margin: 1% 5% 3% 43%;
+}
+
+.event_head {
+margin: 4% 0px 0px 42%;
+}
+
+}
+
+@media (min-width: 420px) and (max-width: 980px) {
+.h_altr {
+margin: 4% 56% 3% 29% !important;
+}
+}
+
+@media (min-width: 420px) and (max-width: 680px) {
+.wrapper {
+width: 23em;
+}
+
+.c_altr{
+	margin-right: 59% !important;
+}
+
+.h_altr {
+margin: 4% 59% 3% 0% !important;
+}
+}
+
+@media (min-width: 420px) and (max-width: 580px) {
+
+.wrapper{
+	width: 19em;
+}
+
+p.event_cont{
+	font-size: 1em;
+}
+
+}
+
+
+@media (min-width: 480px) and (max-width: 500px) {
+
+.wrapper{
+	width: 17em;
+}
+
+}
+
 
 
 

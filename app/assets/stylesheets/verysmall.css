@@ -1,7 +1,9 @@
 @media (min-width: 420px) and (max-width: 480px) {
 .wrapper{
-	width:106% !important;
+	width:16em !important;
 }
+
+
 }
 
 @media (min-width: 240px) and (max-width: 420px) {
@@ -39,7 +41,7 @@ width: 94%;
 }
 
 .h_altr {
-margin: 4% 0px 3% 31%;
+margin: 11% 7% 3% 0%;
 }
 
 p.event_cont.c_altr {
@@ -47,7 +49,7 @@ text-align: justify;
 }
 
 .wrapper {
-width: 106%;
+width: 20em;
 }
 
 
@@ -107,6 +109,10 @@ margin: 1% 6% 3% 6%;
 
 a#small_sign_in {
 padding:4% 4% 3% 4%;
+}
+
+.carousel-inner {
+height: 100% !important;
 }
 
 }
