@@ -11,8 +11,10 @@ aj.jpg: aj-1175e9bd87d92d4a6d5d881df3b3f2bf.jpg
 aj/index.jpg: aj-1175e9bd87d92d4a6d5d881df3b3f2bf.jpg
 ak.jpg: ak-e43a4343fceef5c9c9c8eafaf0d571fa.jpg
 ak/index.jpg: ak-e43a4343fceef5c9c9c8eafaf0d571fa.jpg
-ank-logo.png: ank-logo-7ca99cf0b5b37ab4b66727560c1b3d19.png
-ank-logo/index.png: ank-logo-7ca99cf0b5b37ab4b66727560c1b3d19.png
+ank-logo.png: ank-logo-e463ef086dbecc8f16cb5e81c4f8d45b.png
+ank-logo/index.png: ank-logo-e463ef086dbecc8f16cb5e81c4f8d45b.png
+ank-logo1.png: ank-logo1-7ca99cf0b5b37ab4b66727560c1b3d19.png
+ank-logo1/index.png: ank-logo1-7ca99cf0b5b37ab4b66727560c1b3d19.png
 ank_logo.png: ank_logo-73efab481f744c4a5607a3d4960cb331.png
 ank_logo/index.png: ank_logo-73efab481f744c4a5607a3d4960cb331.png
 anksh.jpg: anksh-e5dc418a729607503b0db9b5d0334ee0.jpg
@@ -65,8 +67,8 @@ tvs.png: tvs-92318622ab86b71fe3c1fe604f9802e9.png
 tvs/index.png: tvs-92318622ab86b71fe3c1fe604f9802e9.png
 application.js: application-0b3a271c29d58817489e0fc14ca47142.js
 application/index.js: application-0b3a271c29d58817489e0fc14ca47142.js
-application.css: application-ea41d7844b39165367ffde4844b03657.css
-application/index.css: application-ea41d7844b39165367ffde4844b03657.css
+application.css: application-25d074b179b9ba9138e369380abec7ce.css
+application/index.css: application-25d074b179b9ba9138e369380abec7ce.css
 jquery.min.map: jquery.min-3071943d5ad0aaec3aa3c6d8670d3730.map
 jquery/index.min.map: jquery.min-3071943d5ad0aaec3aa3c6d8670d3730.map
 fontawesome-webfont.eot: fontawesome-webfont-4d82a98300253526d961044829bbe2d4.eot
