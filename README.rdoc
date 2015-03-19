@@ -1,5 +1,5 @@
 == Site
-This site is hosted at [ANK](ank.mntc.in). It is the site for MNTC's tech fest ANK
+This site is hosted at {ANK}[ank.mntc.in]. It is the site for MNTC's tech fest ANK
 
 == To Deploy
 Currently this app is configured to be deployed on heroku
